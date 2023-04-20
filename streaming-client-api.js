@@ -1,7 +1,7 @@
 'use strict';
 
 import DID_API from './api.json' assert { type: 'json' };
-if (DID_API.key == '🤫') alert('Please put your api key inside ./api.json and restart..')
+if (DID_API.key == 'YmVuamFtaW4ubWV5ZXJzM0BpY2xvdWQuY29t:nxukMnPuT2yCVQJoxf_TY') alert('Please put your api key inside ./api.json and restart..')
 
 const RTCPeerConnection = (window.RTCPeerConnection || window.webkitRTCPeerConnection || window.mozRTCPeerConnection).bind(window);
 
@@ -31,11 +31,11 @@ connectButton.onclick = async () => {
     method: 'POST',
     headers: {'Authorization': `Basic ${DID_API.key}`, 'Content-Type': 'application/json'},
     body: JSON.stringify({
-      source_url: "https://d-id-public-bucket.s3.amazonaws.com/or-roman.jpg"
-    }),
-  });
-
-  
+      source_url: "https://myhost.com/image.jpg",
+    }),script
+  });"type"; "text"
+  "input"; "Hello world!"
+  "webhook"; "https://myhost.com/webhook"
   const { id: newStreamId, offer, ice_servers: iceServers, session_id: newSessionId } = await sessionResponse.json()
   streamId = newStreamId;
   sessionId = newSessionId;
